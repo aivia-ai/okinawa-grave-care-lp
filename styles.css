@@ -99,27 +99,6 @@ a {
   pointer-events: none;
 }
 
-.tomb-inscription {
-  position: absolute;
-  z-index: 1;
-  top: clamp(236px, 18vw, 344px);
-  left: 72.8vw;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  color: rgba(245, 248, 250, 0.76);
-  font-family: "Yu Mincho", "Hiragino Mincho ProN", "Times New Roman", serif;
-  font-size: clamp(42px, 3.8vw, 72px);
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: 0;
-  pointer-events: none;
-  text-shadow:
-    0 1px 1px rgba(255, 255, 255, 0.36),
-    0 4px 8px rgba(0, 0, 0, 0.62),
-    -1px -1px 0 rgba(0, 0, 0, 0.32);
-  transform: translateX(-50%);
-}
-
 .hero-contact {
   position: relative;
   z-index: 4;
@@ -807,12 +786,6 @@ details p {
     background-position: 56% top;
   }
 
-  .tomb-inscription {
-    top: 250px;
-    left: 78.5%;
-    font-size: 50px;
-  }
-
   .hero-contact {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     width: min(940px, calc(100% - 36px));
@@ -886,16 +859,6 @@ details p {
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.52) 42%, rgba(255, 255, 255, 0.92) 100%),
       url("assets/hero-okinawa-grave.png") 64% top / cover no-repeat;
-  }
-
-  .tomb-inscription {
-    top: 276px;
-    left: 89%;
-    color: rgba(245, 248, 250, 0.62);
-    font-size: 40px;
-    text-shadow:
-      0 1px 1px rgba(255, 255, 255, 0.28),
-      0 3px 7px rgba(0, 0, 0, 0.55);
   }
 
   .hero-contact {
