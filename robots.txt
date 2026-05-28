@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 公開URLが決まったら、下記を有効にしてください。
+# Sitemap: https://example.com/sitemap.xml

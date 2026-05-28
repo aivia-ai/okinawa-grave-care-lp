@@ -1,0 +1,1016 @@
+:root {
+  --blue: #0659c9;
+  --deep-blue: #003a97;
+  --sky: #eaf8ff;
+  --line: #bfe0fb;
+  --text: #111827;
+  --green: #2faf55;
+  --shadow: 0 18px 50px rgba(0, 70, 155, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-weight: 700;
+  background:
+    linear-gradient(180deg, rgba(227, 247, 255, 0.1), #fff 34%),
+    #fff;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.svg-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.ui-icon {
+  --icon-size: 58px;
+  display: inline-block;
+  flex: 0 0 auto;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-image: var(--icon-url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: brightness(0) saturate(100%) invert(27%) sepia(91%) saturate(2333%) hue-rotate(203deg) brightness(96%) contrast(101%);
+}
+
+.icon-phone { --icon-url: url("assets/icons/phone.svg"); }
+.icon-mail { --icon-url: url("assets/icons/mail.svg"); }
+.icon-broom { --icon-url: url("assets/icons/broom.svg"); }
+.icon-flower { --icon-url: url("assets/icons/flower.svg"); }
+.icon-camera { --icon-url: url("assets/icons/camera.svg"); }
+.icon-clipboard { --icon-url: url("assets/icons/clipboard.svg"); }
+.icon-home { --icon-url: url("assets/icons/home.svg"); }
+.icon-person { --icon-url: url("assets/icons/person.svg"); }
+.icon-sprout { --icon-url: url("assets/icons/sprout.svg"); }
+.icon-group { --icon-url: url("assets/icons/group.svg"); }
+.icon-heart-hands { --icon-url: url("assets/icons/heart-hands.svg"); }
+.icon-grass { --icon-url: url("assets/icons/grass.svg"); }
+.icon-incense { --icon-url: url("assets/icons/incense.svg"); }
+.icon-map { --icon-url: url("assets/icons/map.svg"); }
+.icon-person-heart { --icon-url: url("assets/icons/person-heart.svg"); }
+.icon-calendar { --icon-url: url("assets/icons/calendar.svg"); }
+.icon-report { --icon-url: url("assets/icons/report.svg"); }
+.icon-arrow { --icon-url: url("assets/icons/arrow.svg"); }
+
+.contact-card-mail .ui-icon,
+.footer-contact .ui-icon {
+  filter: brightness(0) invert(1);
+}
+
+.ui-icon.green {
+  filter: brightness(0) saturate(100%) invert(53%) sepia(55%) saturate(693%) hue-rotate(83deg) brightness(89%) contrast(86%);
+}
+
+.hero {
+  position: relative;
+  min-height: 750px;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.58) 0%, rgba(255, 255, 255, 0.2) 38%, rgba(255, 255, 255, 0) 72%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 78%, rgba(255, 255, 255, 0.95) 100%),
+    url("assets/hero-okinawa-grave.png") center top / cover no-repeat;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 150px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), #fff 66%);
+  pointer-events: none;
+}
+
+.hero-contact {
+  position: relative;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: minmax(0, 420px) minmax(0, 390px);
+  gap: 16px;
+  justify-content: end;
+  width: min(1390px, calc(100% - 72px));
+  margin: 22px auto 0;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 112px;
+  gap: 16px;
+  border-radius: 9px;
+  box-shadow: 0 4px 18px rgba(0, 62, 150, 0.25);
+}
+
+.contact-card-phone {
+  color: var(--blue);
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.contact-card-mail {
+  color: #fff;
+  background: linear-gradient(180deg, #0865d8, #0049ac);
+  border: 2px solid rgba(255, 255, 255, 0.88);
+}
+
+.contact-card span,
+.footer-phone span,
+.footer-mail span {
+  display: grid;
+  min-width: 0;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.contact-card small {
+  color: #111;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.contact-card strong {
+  font-size: 38px;
+  letter-spacing: 1px;
+  overflow-wrap: anywhere;
+}
+
+.contact-card-mail strong {
+  font-size: 23px;
+  letter-spacing: 0;
+  white-space: normal;
+}
+
+.contact-card em,
+.footer-contact em {
+  font-style: normal;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.contact-icon {
+  --icon-size: 48px;
+  width: 48px;
+  height: 48px;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  width: min(1390px, calc(100% - 72px));
+  margin: 0 auto;
+}
+
+.hero-copy {
+  width: min(560px, 52vw);
+  padding-top: 38px;
+  color: #003b98;
+  text-shadow: 0 2px 6px rgba(255, 255, 255, 0.95);
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", "Times New Roman", serif;
+  font-size: clamp(48px, 5.2vw, 86px);
+  line-height: 1.24;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.hero-lead {
+  margin: 34px 0 0;
+  font-size: clamp(23px, 2vw, 31px);
+  line-height: 1.5;
+}
+
+.hero-sub {
+  margin: 26px 0 0;
+  color: #003178;
+  font-size: clamp(18px, 1.5vw, 23px);
+  line-height: 1.85;
+}
+
+.hero-services {
+  position: absolute;
+  z-index: 4;
+  left: max(58px, calc((100% - 1390px) / 2 + 40px));
+  bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 168px);
+  gap: 28px;
+}
+
+.round-service {
+  display: grid;
+  place-items: center;
+  width: 168px;
+  height: 168px;
+  color: #005ed7;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(197, 224, 250, 0.95);
+  border-radius: 999px;
+  box-shadow: 0 14px 30px rgba(0, 72, 160, 0.16);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.round-service:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 72, 160, 0.22);
+}
+
+.round-service .ui-icon {
+  --icon-size: 56px;
+  width: 56px;
+  height: 56px;
+  margin-top: 8px;
+}
+
+.round-service span {
+  color: #101010;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.content-wrap {
+  position: relative;
+  z-index: 5;
+  width: min(1350px, calc(100% - 72px));
+  margin: 0 auto 0;
+}
+
+.panel {
+  position: relative;
+  margin: 14px 0;
+  padding: 22px 32px 20px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 91, 191, 0.05);
+}
+
+.worry-panel {
+  margin-top: -4px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  margin: 0 0 16px;
+  color: var(--blue);
+  text-align: center;
+  font-size: clamp(24px, 2vw, 31px);
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  width: min(160px, 17vw);
+  height: 10px;
+  background: url("assets/decor/title-divider.svg") center / contain no-repeat;
+}
+
+.section-title::after {
+  transform: scaleX(-1);
+}
+
+.section-title.compact {
+  margin-bottom: 4px;
+}
+
+.icon-grid {
+  display: grid;
+  align-items: stretch;
+}
+
+.icon-grid.five {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.icon-grid.six {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.icon-item {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  min-height: 98px;
+  padding: 8px 16px 4px;
+  text-align: center;
+}
+
+.icon-item + .icon-item {
+  border-left: 1px solid #d7e6f4;
+}
+
+.icon-item .ui-icon {
+  --icon-size: 52px;
+  width: 52px;
+  height: 52px;
+  color: #0062dc;
+}
+
+.icon-item .green {
+  color: var(--green);
+}
+
+.icon-item p {
+  margin: 10px 0 0;
+  font-size: clamp(14px, 1.15vw, 18px);
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.plans-section {
+  margin: 6px 0 16px;
+}
+
+.price-note {
+  margin: 0 0 7px;
+  color: #8b8b8b;
+  text-align: center;
+  font-size: 13px;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.price-card {
+  overflow: hidden;
+  min-height: 142px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #aed4f4;
+  border-radius: 7px;
+  box-shadow: 0 5px 14px rgba(0, 70, 155, 0.07);
+}
+
+.price-card h3 {
+  margin: 0;
+  padding: 7px 10px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.2;
+  background: linear-gradient(180deg, #075fcd, #0047a9);
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 6px;
+  margin: 9px 0 6px;
+  color: #111;
+  font-size: 19px;
+  line-height: 1;
+}
+
+.price span {
+  color: var(--blue);
+  font-size: 17px;
+}
+
+.price strong {
+  font-size: clamp(30px, 2.55vw, 39px);
+  letter-spacing: 0;
+}
+
+.price-card > p:not(.price) {
+  margin: 0;
+  padding: 0 10px 14px;
+  font-size: 15px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.reason-panel {
+  overflow: hidden;
+  padding-top: 18px;
+}
+
+.flower-corner {
+  position: absolute;
+  top: 4px;
+  width: 108px;
+  height: 78px;
+  opacity: 0.92;
+  pointer-events: none;
+}
+
+.flower-left {
+  left: 2px;
+  background: url("assets/decor/flower-left.svg") center / contain no-repeat;
+}
+
+.flower-right {
+  right: 4px;
+  background: url("assets/decor/flower-right.svg") center / contain no-repeat;
+}
+
+.flow-panel {
+  margin-top: 14px;
+}
+
+.flow-list {
+  display: grid;
+  grid-template-columns: 1fr 36px 1fr 36px 1fr 36px 1fr 36px 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+.flow-step {
+  position: relative;
+  display: grid;
+  min-height: 104px;
+  place-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.flow-step + .flow-step {
+  border-left: 1px solid #d7e6f4;
+}
+
+.flow-step b {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  display: grid;
+  place-items: center;
+  width: 27px;
+  height: 27px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  background: var(--blue);
+  border-radius: 999px;
+}
+
+.flow-step .ui-icon {
+  --icon-size: 44px;
+  width: 44px;
+  height: 44px;
+  color: #0062dc;
+}
+
+.flow-step p {
+  margin: 6px 0 0;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.flow-arrow {
+  --icon-size: 34px;
+  width: 34px;
+  height: 34px;
+  color: #0062dc;
+}
+
+.faq-cta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin: 14px 0 14px;
+}
+
+.faq-block {
+  min-width: 0;
+}
+
+.faq-list {
+  display: grid;
+  gap: 7px;
+}
+
+details {
+  background: #fff;
+  border: 1px solid #d9e7f4;
+  border-radius: 7px;
+  box-shadow: 0 4px 13px rgba(0, 70, 155, 0.05);
+}
+
+summary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+  padding: 8px 52px 8px 14px;
+  color: #242424;
+  font-size: 15px;
+  line-height: 1.35;
+  cursor: pointer;
+  list-style: none;
+  overflow-wrap: anywhere;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary span {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  color: #fff;
+  font-size: 14px;
+  background: var(--blue);
+  border-radius: 5px;
+}
+
+summary::after {
+  content: "+";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  color: var(--blue);
+  font-size: 27px;
+  line-height: 1;
+  transform: translateY(-54%);
+}
+
+details[open] summary::after {
+  content: "-";
+}
+
+details p {
+  margin: 0;
+  padding: 0 18px 16px 50px;
+  color: #35506c;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.contact-form-panel {
+  margin-bottom: 18px;
+  padding-bottom: 28px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 16px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 18px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+  color: var(--deep-blue);
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #c5e1f8;
+  border-radius: 7px;
+  padding: 12px 13px;
+  color: #111827;
+  font: 700 16px/1.45 "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 70, 155, 0.05);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: 3px solid rgba(0, 102, 220, 0.16);
+  border-color: #0062dc;
+}
+
+.contact-form .full {
+  grid-column: 1 / -1;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+}
+
+.form-actions a,
+.form-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 54px;
+  border-radius: 8px;
+  font: 800 18px/1.2 "Yu Gothic", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+.form-phone {
+  min-width: 245px;
+  padding: 10px 20px;
+  color: var(--blue);
+  background: #fff;
+  border: 1px solid #b8dcf8;
+}
+
+.form-actions button {
+  min-width: 260px;
+  padding: 10px 24px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(180deg, #0865d8, #0049ac);
+  border: 2px solid #fff;
+  box-shadow: 0 8px 20px rgba(0, 73, 172, 0.22);
+}
+
+.form-actions .ui-icon {
+  --icon-size: 28px;
+  width: 28px;
+  height: 28px;
+}
+
+.form-actions button .ui-icon {
+  filter: brightness(0) invert(1);
+}
+
+.image-cta {
+  min-height: 220px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 32px 38px;
+  border-radius: 10px;
+  border: 1px solid #c5e1f8;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.78) 52%, rgba(255, 255, 255, 0.08) 100%),
+    url("assets/cta-okinawa-flowers.png") center / cover no-repeat;
+  box-shadow: 0 12px 30px rgba(0, 70, 155, 0.11);
+}
+
+.image-cta h2 {
+  margin: 0 0 22px;
+  color: var(--blue);
+  font-size: clamp(26px, 2.3vw, 34px);
+  line-height: 1.45;
+}
+
+.image-cta p {
+  margin: 0;
+  font-size: clamp(20px, 1.7vw, 28px);
+  line-height: 1.5;
+}
+
+.footer-contact {
+  position: relative;
+  overflow: hidden;
+  padding: 12px 0 14px;
+  color: #fff;
+  background:
+    linear-gradient(90deg, rgba(0, 61, 163, 0.92), rgba(0, 108, 207, 0.95), rgba(0, 61, 163, 0.92)),
+    url("assets/cta-okinawa-flowers.png") center 82% / cover no-repeat;
+}
+
+.footer-contact::before,
+.footer-contact::after {
+  content: "";
+  position: absolute;
+  bottom: -34px;
+  width: 265px;
+  height: 158px;
+  background: url("assets/cta-okinawa-flowers.png") bottom left / 620px auto no-repeat;
+  opacity: 0.96;
+}
+
+.footer-contact::before {
+  left: -20px;
+}
+
+.footer-contact::after {
+  right: -20px;
+  transform: scaleX(-1);
+}
+
+.footer-inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(360px, 520px) minmax(340px, 520px);
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+  width: min(980px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.footer-phone,
+.footer-mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  gap: 17px;
+}
+
+.footer-phone .ui-icon,
+.footer-mail .ui-icon {
+  --icon-size: 58px;
+  width: 58px;
+  height: 58px;
+}
+
+.footer-phone small {
+  font-size: 15px;
+}
+
+.footer-phone strong {
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+
+.footer-mail {
+  min-height: 76px;
+  padding: 12px 24px;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  background: rgba(0, 67, 167, 0.55);
+}
+
+.footer-mail strong {
+  font-size: 23px;
+}
+
+@media (max-width: 1120px) {
+  .hero {
+    min-height: 760px;
+    background-position: 56% top;
+  }
+
+  .hero-contact {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    width: min(940px, calc(100% - 36px));
+  }
+
+  .contact-card strong {
+    font-size: 30px;
+  }
+
+  .contact-card-mail strong {
+    font-size: 19px;
+  }
+
+  .hero-inner,
+  .content-wrap {
+    width: min(940px, calc(100% - 36px));
+  }
+
+  .hero-copy {
+    width: 54%;
+  }
+
+  .hero-services {
+    left: 28px;
+    grid-template-columns: repeat(4, 140px);
+    gap: 18px;
+  }
+
+  .round-service {
+    width: 140px;
+    height: 140px;
+  }
+
+  .round-service .ui-icon {
+    --icon-size: 46px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .icon-grid.six {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .icon-grid.six .icon-item:nth-child(4) {
+    border-left: 0;
+  }
+
+  .price-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flow-list {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-arrow {
+    justify-self: center;
+    transform: rotate(90deg);
+  }
+
+  .flow-step {
+    min-height: 108px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    min-height: auto;
+    padding-bottom: 28px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.52) 42%, rgba(255, 255, 255, 0.92) 100%),
+      url("assets/hero-okinawa-grave.png") 64% top / cover no-repeat;
+  }
+
+  .hero-contact {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+    width: calc(100% - 24px);
+    margin-top: 12px;
+  }
+
+  .contact-card {
+    min-height: 82px;
+    gap: 10px;
+  }
+
+  .contact-icon {
+    --icon-size: 36px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .contact-card small {
+    font-size: 12px;
+  }
+
+  .contact-card strong {
+    font-size: 27px;
+  }
+
+  .contact-card-mail strong {
+    font-size: 18px;
+  }
+
+  .contact-card em {
+    font-size: 12px;
+  }
+
+  .hero-inner,
+  .content-wrap {
+    width: calc(100% - 24px);
+  }
+
+  .hero-copy {
+    width: 100%;
+    padding-top: 32px;
+  }
+
+  .hero h1 {
+    font-size: 46px;
+  }
+
+  .hero-lead {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+
+  .hero-sub {
+    margin-top: 16px;
+    font-size: 17px;
+  }
+
+  .hero-services {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: calc(100% - 24px);
+    margin: 230px auto 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .round-service {
+    width: 100%;
+    height: auto;
+    min-height: 126px;
+    border-radius: 12px;
+  }
+
+  .panel {
+    margin: 18px 0;
+    padding: 24px 12px 18px;
+    border-radius: 9px;
+  }
+
+  .section-title {
+    gap: 10px;
+    margin-bottom: 18px;
+    font-size: 22px;
+  }
+
+  .section-title::before,
+  .section-title::after {
+    width: 42px;
+  }
+
+  .icon-grid.five,
+  .icon-grid.six {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .icon-item {
+    min-height: 112px;
+    padding: 8px;
+  }
+
+  .icon-item:nth-child(odd) {
+    border-left: 0;
+  }
+
+  .icon-item p {
+    font-size: 14px;
+  }
+
+  .price-grid,
+  .faq-cta-grid,
+  .footer-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .price-card {
+    min-height: auto;
+  }
+
+  .image-cta {
+    min-height: 240px;
+    padding: 30px 22px;
+    background:
+      linear-gradient(90deg, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.46)),
+      url("assets/cta-okinawa-flowers.png") 58% center / cover no-repeat;
+  }
+
+  .footer-inner {
+    width: calc(100% - 24px);
+    gap: 12px;
+  }
+
+  .form-actions a,
+  .form-actions button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .footer-phone strong {
+    font-size: 32px;
+  }
+
+  .footer-phone .ui-icon,
+  .footer-mail .ui-icon {
+    --icon-size: 44px;
+    width: 44px;
+    height: 44px;
+  }
+}
