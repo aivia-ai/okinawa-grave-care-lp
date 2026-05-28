@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://aivia-ai.github.io/okinawa-grave-care-lp/</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://aivia-ai.github.io/okinawa-grave-care-lp/assets/hero-okinawa-grave.jpg</image:loc>
+      <image:title>沖縄のお墓掃除・お墓管理代行</image:title>
+      <image:caption>沖縄のお墓掃除、お墓清掃、お花のお供え、写真付き報告に対応するサービスのメイン画像</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://aivia-ai.github.io/okinawa-grave-care-lp/assets/cta-okinawa-flowers.jpg</image:loc>
+      <image:title>沖縄のお墓管理相談</image:title>
+      <image:caption>沖縄のお墓管理・定期管理の相談を促す海と花の画像</image:caption>
+    </image:image>
   </url>
 </urlset>

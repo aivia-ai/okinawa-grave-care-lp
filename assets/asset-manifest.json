@@ -1,6 +1,10 @@
 {
   "generatedAt": "2026-05-27T12:42:25.475Z",
   "mainImageExcluded": "assets/hero-okinawa-grave.png",
+  "optimizedAssets": [
+    "assets/hero-okinawa-grave.jpg",
+    "assets/cta-okinawa-flowers.jpg"
+  ],
   "generatedAssets": [
     "assets/cta-okinawa-flowers.png",
     "assets/icons/phone.svg",
