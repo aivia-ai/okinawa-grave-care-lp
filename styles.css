@@ -964,6 +964,111 @@ details p {
   font-size: 23px;
 }
 
+.legal-links {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  justify-content: center;
+  width: min(1120px, calc(100% - 32px));
+  margin: 14px auto 0;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.legal-links a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.policy-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(240, 249, 255, 0.95), rgba(255, 255, 255, 0.98)),
+    url("assets/hero-okinawa-grave.jpg") center top / cover fixed no-repeat;
+}
+
+.policy-main {
+  width: min(980px, calc(100% - 28px));
+  margin: 0 auto;
+  padding: 34px 0 46px;
+}
+
+.policy-back {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  margin-bottom: 14px;
+  padding: 8px 14px;
+  color: var(--blue);
+  font-weight: 800;
+  background: #fff;
+  border: 1px solid #cbe3f8;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(0, 70, 155, 0.08);
+}
+
+.policy-document {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.97);
+  border: 1px solid #cbe3f8;
+  border-radius: 10px;
+  box-shadow: 0 14px 34px rgba(0, 70, 155, 0.12);
+}
+
+.policy-document h1 {
+  margin: 0 0 22px;
+  color: var(--deep-blue);
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.35;
+}
+
+.policy-document h2 {
+  margin: 26px 0 10px;
+  color: var(--deep-blue);
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.policy-document p {
+  margin: 0 0 18px;
+  color: #244663;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.policy-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-wrap: anywhere;
+}
+
+.policy-table th,
+.policy-table td {
+  padding: 14px 16px;
+  vertical-align: top;
+  border: 1px solid #d7e6f4;
+}
+
+.policy-table th {
+  width: 28%;
+  color: var(--deep-blue);
+  text-align: left;
+  background: #f2f9ff;
+}
+
+.policy-table td {
+  color: #263f58;
+  background: #fff;
+}
+
+.policy-note {
+  margin-top: 18px;
+}
+
 @media (max-width: 1120px) {
   .hero {
     min-height: 820px;
@@ -1235,5 +1340,46 @@ details p {
     --icon-size: 44px;
     width: 44px;
     height: 44px;
+  }
+}
+
+@media (max-width: 640px) {
+  .policy-main {
+    width: min(100% - 20px, 980px);
+    padding: 20px 0 34px;
+  }
+
+  .policy-document {
+    padding: 20px 14px;
+  }
+
+  .policy-table,
+  .policy-table tbody,
+  .policy-table tr,
+  .policy-table th,
+  .policy-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .policy-table tr {
+    border: 1px solid #d7e6f4;
+  }
+
+  .policy-table tr + tr {
+    border-top: 0;
+  }
+
+  .policy-table th,
+  .policy-table td {
+    border: 0;
+  }
+
+  .policy-table th {
+    padding-bottom: 6px;
+  }
+
+  .policy-table td {
+    padding-top: 6px;
   }
 }
