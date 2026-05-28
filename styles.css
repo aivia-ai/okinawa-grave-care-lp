@@ -99,6 +99,45 @@ a {
   pointer-events: none;
 }
 
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 360px;
+  min-height: 72px;
+  margin-bottom: 22px;
+  padding: 10px 16px 10px 12px;
+  color: var(--deep-blue);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(191, 224, 251, 0.94);
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(0, 72, 160, 0.15);
+}
+
+.site-logo img {
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+}
+
+.site-logo span {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+  line-height: 1.25;
+}
+
+.site-logo strong {
+  font-size: 18px;
+  overflow-wrap: anywhere;
+}
+
+.site-logo em {
+  color: #245d9c;
+  font-style: normal;
+  font-size: 12px;
+}
+
 .hero-contact {
   position: relative;
   z-index: 4;
@@ -437,8 +476,14 @@ a {
   padding-top: 18px;
 }
 
+.reason-panel .section-title {
+  position: relative;
+  z-index: 2;
+}
+
 .flower-corner {
   position: absolute;
+  z-index: 1;
   top: 4px;
   width: 108px;
   height: 78px;
@@ -961,6 +1006,28 @@ details p {
     margin-top: 12px;
   }
 
+  .site-logo {
+    justify-content: center;
+    width: 100%;
+    max-width: 360px;
+    min-height: 74px;
+    margin-bottom: 18px;
+    padding: 9px 12px;
+  }
+
+  .site-logo img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .site-logo strong {
+    font-size: 17px;
+  }
+
+  .site-logo em {
+    font-size: 12px;
+  }
+
   .contact-card {
     min-height: 82px;
     gap: 10px;
@@ -1033,6 +1100,21 @@ details p {
     margin: 18px 0;
     padding: 24px 12px 18px;
     border-radius: 9px;
+  }
+
+  .reason-panel {
+    padding-top: 54px;
+  }
+
+  .reason-panel .section-title {
+    margin-bottom: 16px;
+  }
+
+  .flower-corner {
+    top: 8px;
+    width: 74px;
+    height: 54px;
+    opacity: 0.78;
   }
 
   .seo-text-grid {
