@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# 公開URLが決まったら、下記を有効にしてください。
-# Sitemap: https://example.com/sitemap.xml
+Sitemap: https://aivia-ai.github.io/okinawa-grave-care-lp/sitemap.xml
