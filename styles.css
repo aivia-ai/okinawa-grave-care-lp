@@ -411,6 +411,92 @@ a {
   overflow-wrap: anywhere;
 }
 
+.payment-panel {
+  margin: 16px 0 16px;
+  padding-top: 18px;
+}
+
+.payment-lead {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5fbff 100%);
+  border: 1px solid #cbe3f8;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(0, 83, 180, 0.07);
+}
+
+.payment-lead .ui-icon {
+  justify-self: center;
+  --icon-size: 50px;
+  width: 58px;
+  height: 58px;
+  color: #0062dc;
+}
+
+.payment-lead h3 {
+  margin: 0 0 5px;
+  color: var(--deep-blue);
+  font-size: clamp(18px, 1.8vw, 24px);
+  line-height: 1.35;
+}
+
+.payment-lead p {
+  margin: 0;
+  color: #244663;
+  font-size: clamp(14px, 1.08vw, 17px);
+  line-height: 1.75;
+}
+
+.payment-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.payment-steps article {
+  position: relative;
+  min-height: 116px;
+  padding: 17px 16px 14px 54px;
+  background: #fff;
+  border: 1px solid #d7e6f4;
+  border-radius: 8px;
+  box-shadow: 0 5px 14px rgba(0, 70, 155, 0.06);
+}
+
+.payment-steps b {
+  position: absolute;
+  top: 18px;
+  left: 17px;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  background: linear-gradient(180deg, #1478ff, #004fb8);
+  border-radius: 999px;
+}
+
+.payment-steps h3 {
+  margin: 0 0 6px;
+  color: var(--deep-blue);
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.payment-steps p {
+  margin: 0;
+  color: #263f58;
+  font-size: 14px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
 .seo-text-panel {
   padding-top: 18px;
 }
@@ -936,6 +1022,10 @@ details p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .payment-steps {
+    grid-template-columns: 1fr;
+  }
+
   .flow-list {
     grid-template-columns: 1fr;
   }
@@ -1094,6 +1184,19 @@ details p {
   .faq-cta-grid,
   .footer-inner {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .payment-lead {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 10px;
+    padding: 16px 14px;
+    text-align: center;
+  }
+
+  .payment-steps article {
+    min-height: 0;
+    padding: 15px 14px 14px 52px;
   }
 
   .form-grid {
