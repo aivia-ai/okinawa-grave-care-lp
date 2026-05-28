@@ -631,6 +631,15 @@ details p {
   gap: 16px;
 }
 
+.hidden-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -713,6 +722,11 @@ details p {
   box-shadow: 0 8px 20px rgba(0, 73, 172, 0.22);
 }
 
+.form-actions button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
 .form-actions .ui-icon {
   --icon-size: 28px;
   width: 28px;
@@ -721,6 +735,35 @@ details p {
 
 .form-actions button .ui-icon {
   filter: brightness(0) invert(1);
+}
+
+.form-status {
+  display: grid;
+  gap: 4px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.form-status[hidden] {
+  display: none;
+}
+
+.form-status strong {
+  font-size: 17px;
+}
+
+.form-status-success {
+  color: #075728;
+  background: #ecfff4;
+  border: 1px solid #9ee6ba;
+}
+
+.form-status-error {
+  color: #8a1a1a;
+  background: #fff2f2;
+  border: 1px solid #f2b6b6;
 }
 
 .image-cta {

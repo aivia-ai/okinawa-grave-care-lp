@@ -498,7 +498,11 @@
 
         <section class="panel contact-form-panel" id="contact-form" aria-labelledby="contact-form-title">
           <h2 class="section-title compact" id="contact-form-title">お問い合わせフォーム</h2>
-          <form class="contact-form" id="mail-contact-form" action="mailto:wantmustcan@gmail.com" method="post" enctype="text/plain">
+          <form class="contact-form" id="mail-contact-form" action="https://formsubmit.co/ajax/wantmustcan@gmail.com" method="post">
+            <input type="hidden" name="_subject" value="【お問い合わせ】沖縄お墓まもりサポート">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input class="hidden-field" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="form-grid">
               <label>
                 <span>お名前</span>
@@ -510,7 +514,7 @@
               </label>
               <label>
                 <span>メールアドレス</span>
-                <input type="email" name="メールアドレス" autocomplete="email" required>
+                <input type="email" name="email" autocomplete="email" required>
               </label>
               <label>
                 <span>ご希望エリア</span>
@@ -546,6 +550,14 @@
                 <span class="ui-icon icon-mail" aria-hidden="true"></span>
                 メールで送信する
               </button>
+            </div>
+            <div class="form-status form-status-success" id="form-success" role="status" hidden>
+              <strong>お問い合わせありがとうございます。</strong>
+              <span>内容を確認のうえ、折り返しご連絡いたします。</span>
+            </div>
+            <div class="form-status form-status-error" id="form-error" role="alert" hidden>
+              <strong>送信できませんでした。</strong>
+              <span>時間をおいて再度お試しいただくか、お電話でお問い合わせください。</span>
             </div>
           </form>
         </section>
