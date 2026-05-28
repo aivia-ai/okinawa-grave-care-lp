@@ -82,7 +82,7 @@ a {
 
 .hero {
   position: relative;
-  min-height: 750px;
+  min-height: 850px;
   overflow: hidden;
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.58) 0%, rgba(255, 255, 255, 0.2) 38%, rgba(255, 255, 255, 0) 72%),
@@ -94,8 +94,8 @@ a {
   content: "";
   position: absolute;
   inset: auto 0 0;
-  height: 150px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0), #fff 66%);
+  height: 210px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), #fff 62%, #fff 100%);
   pointer-events: none;
 }
 
@@ -181,7 +181,7 @@ a {
 }
 
 .hero-copy {
-  width: min(560px, 52vw);
+  width: min(670px, 55vw);
   padding-top: 38px;
   color: #003b98;
   text-shadow: 0 2px 6px rgba(255, 255, 255, 0.95);
@@ -190,7 +190,7 @@ a {
 .hero h1 {
   margin: 0;
   font-family: "Yu Mincho", "Hiragino Mincho ProN", "Times New Roman", serif;
-  font-size: clamp(48px, 5.2vw, 86px);
+  font-size: clamp(48px, 4.8vw, 78px);
   line-height: 1.24;
   letter-spacing: 0;
   font-weight: 800;
@@ -213,7 +213,7 @@ a {
   position: absolute;
   z-index: 4;
   left: max(58px, calc((100% - 1390px) / 2 + 40px));
-  bottom: 40px;
+  bottom: 26px;
   display: grid;
   grid-template-columns: repeat(4, 168px);
   gap: 28px;
@@ -226,10 +226,10 @@ a {
   height: 168px;
   color: #005ed7;
   text-align: center;
-  background: rgba(255, 255, 255, 0.96);
+  background: #fff;
   border: 1px solid rgba(197, 224, 250, 0.95);
   border-radius: 999px;
-  box-shadow: 0 14px 30px rgba(0, 72, 160, 0.16);
+  box-shadow: 0 16px 34px rgba(0, 72, 160, 0.2);
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
@@ -782,7 +782,7 @@ details p {
 
 @media (max-width: 1120px) {
   .hero {
-    min-height: 760px;
+    min-height: 820px;
     background-position: 56% top;
   }
 
@@ -805,11 +805,12 @@ details p {
   }
 
   .hero-copy {
-    width: 54%;
+    width: min(620px, 62%);
   }
 
   .hero-services {
     left: 28px;
+    bottom: 30px;
     grid-template-columns: repeat(4, 140px);
     gap: 18px;
   }
@@ -854,7 +855,7 @@ details p {
 @media (max-width: 760px) {
   .hero {
     min-height: auto;
-    padding-bottom: 28px;
+    padding-bottom: 32px;
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.52) 42%, rgba(255, 255, 255, 0.92) 100%),
       url("assets/hero-okinawa-grave.png") 64% top / cover no-repeat;
@@ -923,7 +924,7 @@ details p {
     left: auto;
     bottom: auto;
     width: calc(100% - 24px);
-    margin: 230px auto 0;
+    margin: 250px auto 0;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
   }
