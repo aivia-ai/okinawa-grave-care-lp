@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 210" role="img" aria-label="お墓を清掃しお花を供えるイラスト">
+  <rect width="320" height="210" rx="22" fill="#f3fbff"/>
+  <path d="M28 158c58-39 113-40 153-5 29 25 66 22 111-10v46H28z" fill="#e7f5e7"/>
+  <rect x="112" y="45" width="76" height="93" rx="9" fill="#c9d3dc" stroke="#6f8499" stroke-width="5"/>
+  <path d="M127 70h47m-40 21h33" stroke="#eef6fb" stroke-width="5" stroke-linecap="round"/>
+  <rect x="93" y="135" width="113" height="22" rx="5" fill="#aab8c5" stroke="#6f8499" stroke-width="5"/>
+  <path d="M61 122c20-5 40-4 59 5m-41 15c24-10 47-10 69 0" fill="none" stroke="#30a04a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M216 131c10-25 24-31 37-17 13-15 32-10 36 8 4 18-17 31-36 42-17-9-39-19-37-33z" fill="#ff6aa3"/>
+  <path d="M253 114v55" stroke="#30a04a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M236 122c-10-12-21-14-32-7m61 8c12-11 25-12 39-2" fill="none" stroke="#30a04a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M217 68l-52 111" stroke="#0a64dc" stroke-width="8" stroke-linecap="round"/>
+  <path d="M206 60l31 15" stroke="#0a64dc" stroke-width="8" stroke-linecap="round"/>
+  <path d="M150 174h68" stroke="#0a64dc" stroke-width="8" stroke-linecap="round"/>
+  <path d="M43 178h238" stroke="#99c7ef" stroke-width="4" stroke-linecap="round"/>
+</svg>

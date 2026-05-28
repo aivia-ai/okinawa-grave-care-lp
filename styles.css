@@ -462,18 +462,24 @@ a {
 
 .flow-list {
   display: grid;
-  grid-template-columns: 1fr 36px 1fr 36px 1fr 36px 1fr 36px 1fr;
-  align-items: center;
-  gap: 12px;
+  grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr) 28px minmax(0, 1fr) 28px minmax(0, 1fr) 28px minmax(0, 1fr);
+  align-items: stretch;
+  gap: 10px;
 }
 
 .flow-step {
   position: relative;
   display: grid;
-  min-height: 104px;
-  place-items: center;
-  padding: 10px;
+  align-content: start;
+  justify-items: center;
+  min-width: 0;
+  min-height: 238px;
+  padding: 12px 10px 14px;
   text-align: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+  border: 1px solid #d7e6f4;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0, 83, 180, 0.08);
 }
 
 .flow-step + .flow-step {
@@ -482,36 +488,55 @@ a {
 
 .flow-step b {
   position: absolute;
-  top: 0;
-  left: 10px;
+  top: -10px;
+  left: 12px;
   display: grid;
   place-items: center;
-  width: 27px;
-  height: 27px;
+  width: 32px;
+  height: 32px;
   color: #fff;
   font-size: 14px;
   line-height: 1;
-  background: var(--blue);
+  background: linear-gradient(180deg, #1478ff, #004fb8);
+  border: 2px solid #fff;
   border-radius: 999px;
+  box-shadow: 0 4px 8px rgba(0, 72, 168, 0.2);
 }
 
-.flow-step .ui-icon {
-  --icon-size: 44px;
-  width: 44px;
-  height: 44px;
-  color: #0062dc;
+.flow-step img {
+  display: block;
+  justify-self: center;
+  width: min(100%, 176px);
+  aspect-ratio: 320 / 210;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.flow-step h3 {
+  width: 100%;
+  margin: 0 0 6px;
+  color: var(--deep-blue);
+  font-size: 16px;
+  line-height: 1.35;
+  letter-spacing: 0;
 }
 
 .flow-step p {
-  margin: 6px 0 0;
-  font-size: 15px;
-  line-height: 1.55;
+  width: 100%;
+  max-width: 16em;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.65;
+  text-align: center;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .flow-arrow {
-  --icon-size: 34px;
-  width: 34px;
-  height: 34px;
+  align-self: center;
+  --icon-size: 28px;
+  width: 28px;
+  height: 28px;
   color: #0062dc;
 }
 
@@ -869,7 +894,8 @@ details p {
   }
 
   .flow-step {
-    min-height: 108px;
+    min-height: auto;
+    padding: 18px 18px 20px;
   }
 }
 

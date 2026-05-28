@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 210" role="img" aria-label="作業後に写真を撮影するイラスト">
+  <rect width="320" height="210" rx="22" fill="#f3fbff"/>
+  <path d="M34 160c44-28 86-30 124-5 42 28 83 21 132-18v51H34z" fill="#e3f4ea"/>
+  <rect x="56" y="61" width="82" height="93" rx="9" fill="#cfd8df" stroke="#6f8499" stroke-width="5"/>
+  <path d="M72 85h50m-39 22h29" stroke="#f3fbff" stroke-width="5" stroke-linecap="round"/>
+  <rect x="43" y="151" width="108" height="18" rx="5" fill="#aab8c5" stroke="#6f8499" stroke-width="5"/>
+  <rect x="171" y="75" width="101" height="72" rx="14" fill="#fff" stroke="#0a64dc" stroke-width="6"/>
+  <rect x="194" y="60" width="36" height="20" rx="8" fill="#d9ecff" stroke="#0a64dc" stroke-width="6"/>
+  <circle cx="222" cy="111" r="23" fill="#d9ecff" stroke="#0a64dc" stroke-width="6"/>
+  <circle cx="222" cy="111" r="9" fill="#0a64dc"/>
+  <circle cx="253" cy="93" r="6" fill="#ffca43"/>
+  <path d="M68 48l8 16m-25 2 17 8m76-35-14 17m29 14-18 6" stroke="#ffca43" stroke-width="5" stroke-linecap="round"/>
+  <path d="M42 178h239" stroke="#99c7ef" stroke-width="4" stroke-linecap="round"/>
+</svg>

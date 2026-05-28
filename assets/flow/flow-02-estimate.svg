@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 210" role="img" aria-label="見積りと日程調整のイラスト">
+  <rect width="320" height="210" rx="22" fill="#f3fbff"/>
+  <path d="M30 161c52-28 93-29 124-3 31 25 80 21 136-16v45H30z" fill="#e5f5ea"/>
+  <rect x="68" y="43" width="96" height="123" rx="12" fill="#fff" stroke="#0a64dc" stroke-width="5"/>
+  <rect x="94" y="31" width="45" height="24" rx="7" fill="#d9ecff" stroke="#0a64dc" stroke-width="5"/>
+  <path d="M91 78h45m-45 24h45m-45 24h34" stroke="#0a64dc" stroke-width="5" stroke-linecap="round"/>
+  <path d="M139 78l12 12 22-26m-34 39 12 12 22-26" fill="none" stroke="#30a04a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="190" y="72" width="82" height="76" rx="12" fill="#fff" stroke="#0a64dc" stroke-width="5"/>
+  <path d="M190 95h82" stroke="#0a64dc" stroke-width="5"/>
+  <path d="M209 58v25m43-25v25" stroke="#0a64dc" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="211" cy="116" r="6" fill="#ffca43"/>
+  <circle cx="233" cy="116" r="6" fill="#ffca43"/>
+  <circle cx="255" cy="116" r="6" fill="#ffca43"/>
+  <circle cx="211" cy="136" r="6" fill="#8fd4ff"/>
+  <circle cx="233" cy="136" r="6" fill="#8fd4ff"/>
+  <path d="M49 174h235" stroke="#99c7ef" stroke-width="4" stroke-linecap="round"/>
+</svg>
