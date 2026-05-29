@@ -828,6 +828,20 @@ details p {
   filter: brightness(0) invert(1);
 }
 
+.form-privacy {
+  margin: -4px 0 0;
+  color: #35506c;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.form-privacy a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .form-status {
   display: grid;
   gap: 4px;
@@ -991,7 +1005,8 @@ details p {
 }
 
 .policy-main {
-  width: min(980px, calc(100% - 28px));
+  width: calc(100% - 28px);
+  max-width: 980px;
   margin: 0 auto;
   padding: 34px 0 46px;
 }
@@ -1011,6 +1026,10 @@ details p {
 }
 
 .policy-document {
+  width: 100%;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  line-break: strict;
   padding: 30px;
   background: rgba(255, 255, 255, 0.97);
   border: 1px solid #cbe3f8;
@@ -1344,7 +1363,10 @@ details p {
 
 @media (max-width: 640px) {
   .policy-main {
-    width: min(100% - 20px, 980px);
+    width: 360px;
+    max-width: calc(100% - 20px);
+    margin-right: 10px;
+    margin-left: 10px;
     padding: 20px 0 34px;
   }
 
