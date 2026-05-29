@@ -345,6 +345,12 @@ a {
   overflow-wrap: anywhere;
 }
 
+.text-link {
+  color: var(--deep-blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .plans-section {
   margin: 6px 0 16px;
 }
