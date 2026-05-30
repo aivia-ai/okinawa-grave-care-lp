@@ -1600,9 +1600,20 @@ details p {
     font-size: 22px;
   }
 
+  .worry-panel .section-title {
+    gap: 6px;
+    font-size: 20px;
+    white-space: nowrap;
+  }
+
   .section-title::before,
   .section-title::after {
     width: 42px;
+  }
+
+  .worry-panel .section-title::before,
+  .worry-panel .section-title::after {
+    width: 24px;
   }
 
   .icon-grid.five,
@@ -1624,29 +1635,30 @@ details p {
   }
 
   .worry-photo-grid {
-    grid-template-columns: 1fr;
-    width: calc(100vw - 52px);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(100%, 330px);
     max-width: 100%;
     margin: 0 auto;
-    gap: 10px;
+    gap: 8px;
   }
 
   .worry-card {
-    grid-template-columns: 38% minmax(0, 1fr);
-    grid-template-rows: 1fr;
-    min-height: 112px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 0;
   }
 
   .worry-card img {
-    height: 100%;
-    aspect-ratio: auto;
+    height: auto;
+    aspect-ratio: 4 / 3;
   }
 
   .worry-card p {
-    min-height: 0;
-    padding: 10px 11px;
-    font-size: 14px;
-    text-align: left;
+    min-height: 58px;
+    padding: 8px 6px;
+    font-size: 13px;
+    line-height: 1.45;
+    text-align: center;
   }
 
   .service-photo-grid {
