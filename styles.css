@@ -701,24 +701,31 @@ a {
   z-index: 2;
 }
 
+.reason-panel .icon-grid {
+  position: relative;
+  z-index: 2;
+}
+
 .flower-corner {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   top: 4px;
   width: 108px;
   height: 78px;
-  opacity: 0.92;
+  border-radius: 8px;
+  opacity: 0.82;
+  filter: saturate(1.05);
   pointer-events: none;
 }
 
 .flower-left {
   left: 2px;
-  background: url("assets/decor/flower-left.svg") center / contain no-repeat;
+  background: url("assets/decor/reason-flower-left.jpg") center / cover no-repeat;
 }
 
 .flower-right {
   right: 4px;
-  background: url("assets/decor/flower-right.svg") center / contain no-repeat;
+  background: url("assets/decor/reason-flower-right.jpg") center / cover no-repeat;
 }
 
 .flow-panel {
