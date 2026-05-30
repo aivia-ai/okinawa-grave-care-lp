@@ -430,6 +430,28 @@ a {
   overflow-wrap: anywhere;
 }
 
+.support-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.support-link-row a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 9px 16px;
+  border: 1px solid #b9dcf7;
+  border-radius: 8px;
+  color: var(--deep-blue);
+  background: #f8fcff;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
 .text-link {
   color: var(--deep-blue);
   text-decoration: underline;
@@ -1700,6 +1722,19 @@ details p {
   .service-card p {
     font-size: 12px;
     line-height: 1.65;
+  }
+
+  .support-link-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: min(100%, 330px);
+    margin: 14px auto 0;
+    gap: 8px;
+  }
+
+  .support-link-row a {
+    min-height: 40px;
+    font-size: 13px;
   }
 
   .price-grid,
