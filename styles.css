@@ -720,12 +720,12 @@ a {
 
 .flower-left {
   left: 2px;
-  background: url("assets/decor/reason-flower-left.jpg") center / cover no-repeat;
+  background: url("assets/decor/flower-left.svg") center / contain no-repeat;
 }
 
 .flower-right {
   right: 4px;
-  background: url("assets/decor/reason-flower-right.jpg") center / cover no-repeat;
+  background: url("assets/decor/flower-right.svg") center / contain no-repeat;
 }
 
 .flow-panel {
