@@ -272,6 +272,44 @@ a {
   margin-top: -4px;
 }
 
+.worry-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  min-width: 0;
+}
+
+.worry-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #d7e6f4;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0, 76, 158, 0.07);
+}
+
+.worry-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.worry-card p {
+  display: grid;
+  align-content: center;
+  min-height: 70px;
+  margin: 0;
+  padding: 10px 8px;
+  color: var(--deep-blue);
+  font-size: clamp(13px, 1vw, 16px);
+  line-height: 1.55;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
 .section-title {
   display: flex;
   align-items: center;
@@ -1382,6 +1420,10 @@ details p {
     border-left: 0;
   }
 
+  .worry-photo-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .service-photo-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1579,6 +1621,32 @@ details p {
 
   .icon-item p {
     font-size: 14px;
+  }
+
+  .worry-photo-grid {
+    grid-template-columns: 1fr;
+    width: calc(100vw - 52px);
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 10px;
+  }
+
+  .worry-card {
+    grid-template-columns: 38% minmax(0, 1fr);
+    grid-template-rows: 1fr;
+    min-height: 112px;
+  }
+
+  .worry-card img {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+
+  .worry-card p {
+    min-height: 0;
+    padding: 10px 11px;
+    font-size: 14px;
+    text-align: left;
   }
 
   .service-photo-grid {
