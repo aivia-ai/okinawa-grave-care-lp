@@ -345,6 +345,50 @@ a {
   overflow-wrap: anywhere;
 }
 
+.service-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.service-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #d7e6f4;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(0, 76, 158, 0.08);
+}
+
+.service-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.service-card div {
+  padding: 16px 16px 18px;
+}
+
+.service-card h3 {
+  margin: 0 0 8px;
+  color: var(--deep-blue);
+  font-size: clamp(17px, 1.35vw, 21px);
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.service-card p {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
 .text-link {
   color: var(--deep-blue);
   text-decoration: underline;
@@ -1335,6 +1379,10 @@ details p {
     border-left: 0;
   }
 
+  .service-photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .price-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1528,6 +1576,15 @@ details p {
 
   .icon-item p {
     font-size: 14px;
+  }
+
+  .service-photo-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .service-card div {
+    padding: 14px;
   }
 
   .price-grid,

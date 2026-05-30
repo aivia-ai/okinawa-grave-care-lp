@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T12:42:25.475Z",
+  "generatedAt": "2026-05-30T06:55:00.000Z",
   "mainImageExcluded": "assets/hero-okinawa-grave.png",
   "optimizedAssets": [
     "assets/hero-okinawa-grave.jpg",
@@ -30,6 +30,12 @@
     "assets/flow/flow-03-cleaning.jpg",
     "assets/flow/flow-04-photo.jpg",
     "assets/flow/flow-05-report.jpg",
+    "assets/services/service-cleaning.jpg",
+    "assets/services/service-weeding.jpg",
+    "assets/services/service-flowers.jpg",
+    "assets/services/service-incense.jpg",
+    "assets/services/service-photo-report.jpg",
+    "assets/services/service-regular-care.jpg",
     "assets/decor/title-divider.svg",
     "assets/decor/flower-left.svg",
     "assets/decor/flower-right.svg"
